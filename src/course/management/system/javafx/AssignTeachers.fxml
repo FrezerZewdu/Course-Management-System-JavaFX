@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="455.0" prefWidth="415.0" style="-fx-border-color: #333;" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="559.0" prefWidth="415.0" style="-fx-background-color: #e6e6e6; -fx-border-color: #333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="49.0" prefWidth="415.0" style="-fx-background-color: #333;">
+               <children>
+                  <Label fx:id="close_btn" alignment="CENTER" contentDisplay="CENTER" layoutX="363.0" onMouseClicked="#handleClose" prefHeight="49.0" prefWidth="52.0" stylesheets="@Css.css" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="52.0" layoutY="68.0" text="Assign Teachers Form">
+               <font>
+                  <Font name="Bell MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <Line endX="241.20001220703125" endY="1.52587890625E-5" layoutX="174.0" layoutY="126.0" startX="-174.0" startY="1.52587890625E-5" stroke="#b5b5b5" />
+            <VBox layoutX="53.0" layoutY="158.0" prefHeight="192.0" prefWidth="326.0" spacing="20.0">
+               <children>
+                  <Label text="Teacher Name :" />
+                  <JFXComboBox fx:id="combotName" focusColor="#40a84f" labelFloat="true" prefHeight="25.0" prefWidth="297.0" promptText="Choose" />
+                  <Label text="Course Title:" />
+                  <JFXComboBox fx:id="combocTitle" focusColor="#40a84f" labelFloat="true" prefHeight="25.0" prefWidth="297.0" promptText="Choose" />
+               </children>
+            </VBox>
+            <JFXButton layoutX="158.0" layoutY="369.0" onAction="#handleAssign" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #40a84f;" text="Assain" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</fx:root>

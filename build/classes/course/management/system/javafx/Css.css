@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 8, 2020, 7:39:03 AM
+    Author     : ewca
+*/
+#close_btn{
+    -fx-background-color: transparent;
+}
+#close_btn:hover{
+    -fx-background-color:#E81123;
+}
+#close_btnMessanger{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0 24 0 0;
+    -fx-border-radius: 0 24 0 0;
+}
+#close_btnMessanger:hover{
+    -fx-background-color:#E81123;
+}
+.close_btn{
+    -fx-background-color: transparent;
+}
+.close_btn:hover{
+    -fx-background-color:#E81123;
+}
+.min_btn{
+    -fx-background-color: transparent;
+}
+.min_btn:hover{
+    -fx-background-color: #171717;
+}
+.search_btn{
+    -fx-background-color: transparent;
+  
+}
+.search_btn:hover{
+    -fx-background-color: #303138;
+    -fx-text-fill: #fff;
+}
+ #lEmailerror{
+    -fx-background-color:#FF2222;
+     -fx-text-fill: #fff;
+}
+#lFnameError{
+     -fx-background-color:#FF2222;
+     -fx-text-fill: #fff;
+}
+#lMnameError{
+        -fx-background-color:#FF2222;
+        -fx-text-fill: #fff;
+}
+#lLnameError{
+        -fx-background-color:#FF2222;
+        -fx-text-fill: #fff;
+}
+#lPhoneError{
+        -fx-background-color:#FF2222;
+        -fx-text-fill: #fff;    
+}
+#lPassError{
+        -fx-background-color:#FF2222;
+        -fx-text-fill: #fff;
+}
+@font-face {
+    font-family: 'OpenSansEmoji';
+    src: url('OpenSansEmoji.ttf');
+}
+
+.text-flow {
+    -fx-font-family: OpenSansEmoji;
+    -fx-font-size: 32;
+}
+
+/* for the main button of the ComboBox  */
+
+.combo-box .cell{
+    -fx-text-fill: black;
+    -fx-font: 16px "Visual Geez Unicode";
+}
+.customcell {
+    -fx-text-fill: black;
+    -fx-font: 16px "Visual Geez Unicode";
+    /* No alternate highlighting */
+    -fx-background-color: #FFF;
+}
