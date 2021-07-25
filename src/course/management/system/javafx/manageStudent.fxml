@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="785.0" prefWidth="1922.0" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+ <children>
+      <Pane prefHeight="697.0" prefWidth="831.0" style="-fx-background-color: #e6e6e6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane prefHeight="697.0" prefWidth="1011.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <Pane prefHeight="698.0" prefWidth="362.0" style="-fx-background-color: #333;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="53.0" layoutY="246.0" text="First Name:" textFill="WHITE" />
+                  <Label layoutX="53.0" layoutY="288.0" text="Middle Name:" textFill="WHITE" />
+                  <Label layoutX="53.0" layoutY="330.0" text="Last Name:" textFill="WHITE" />
+                  <Label layoutX="53.0" layoutY="374.0" text="Gender:" textFill="WHITE" />
+                  <Label layoutX="53.0" layoutY="418.0" text="Date of Birth:" textFill="WHITE" />
+                  <Label layoutX="53.0" layoutY="506.0" text="Address:" textFill="WHITE" />
+                  <Label layoutX="53.0" layoutY="551.0" text="Acadamic Year:" textFill="WHITE" />
+                  <JFXTextField fx:id="tffname" focusColor="#47a242" layoutX="144.0" layoutY="242.0" prefHeight="25.0" prefWidth="159.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="tfmname" focusColor="#47a242" layoutX="146.0" layoutY="284.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="tfdob" focusColor="#47a242" layoutX="149.0" layoutY="406.0" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="tflname" focusColor="#47a242" layoutX="146.0" layoutY="326.0" prefHeight="25.0" prefWidth="157.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="tfaddress" focusColor="#47a242" layoutX="151.0" layoutY="494.0" prefHeight="25.0" prefWidth="152.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <JFXRadioButton fx:id="genderMale" layoutX="146.0" layoutY="374.0" onAction="#handleMale" text="Male" textFill="WHITE" />
+                  <JFXRadioButton fx:id="genderFemale" layoutX="237.0" layoutY="374.0" onAction="#handleFemale" text="Female" textFill="WHITE" />
+                  <Label layoutX="99.0" layoutY="156.0" text="Manage Form" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="25.0" />
+                     </font>
+                  </Label>
+                  <Line endX="223.4000244140625" endY="7.62939453125E-6" layoutX="139.0" layoutY="102.0" startX="-139.00001525878906" startY="7.62939453125E-6" stroke="WHITE" />
+                  <TextField fx:id="tfsearch" layoutX="29.0" layoutY="36.0" prefHeight="25.0" prefWidth="285.0" promptText="Type Here" style="-fx-background-radius: 52px;" />
+                  <Label layoutX="53.0" layoutY="466.0" text="Phone No.:" textFill="WHITE" />
+                  <JFXTextField fx:id="tfphone" focusColor="#47a242" layoutX="148.0" layoutY="453.0" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <ImageView fitHeight="18.0" fitWidth="16.0" layoutX="33.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icon/icons8_Search_50px_2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="51.0" layoutY="14.0" prefHeight="17.0" prefWidth="74.0" text="Search Box" textFill="WHITE" />
+                  <HBox layoutX="55.0" layoutY="693.0" prefHeight="43.0" prefWidth="253.0" spacing="20.0">
+                     <children>
+                        <JFXButton fx:id="updateBtn" onAction="#handleUpdate" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #3f42ff;" text="Update" textFill="WHITE" />
+                        <JFXButton fx:id="clearBtn" onAction="#handleClear" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: Red;" text="Clear" textFill="WHITE" />
+                        <JFXButton fx:id="printBtn" onAction="#handlePrint" prefHeight="32.0" prefWidth="73.0" style="-fx-background-color: #e6e6e6;" text="Print" />
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="tfyear" focusColor="#47a242" layoutX="151.0" layoutY="539.0" prefHeight="25.0" prefWidth="152.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <Label layoutX="102.0" layoutY="77.0" prefHeight="17.0" prefWidth="101.0" text="Total Students" textFill="WHITE" />
+                  <Label fx:id="lcountTotalStudents" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="68.0" prefHeight="19.0" prefWidth="20.0" style="-fx-background-color: #64c578; -fx-background-radius: 100; -fx-border-radius: 100;" text="0" textFill="WHITE" />
+                  <JFXTextField fx:id="tfid" focusColor="#47a242" layoutX="16.0" layoutY="194.0" prefHeight="25.0" prefWidth="33.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <ImageView fitHeight="26.0" fitWidth="25.0" layoutX="68.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../icon/icons8_Students_52px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="55.0" layoutY="586.0" text="Year:" textFill="WHITE" />
+                  <JFXTextField fx:id="tfyear1" focusColor="#47a242" layoutX="151.0" layoutY="582.0" prefHeight="25.0" prefWidth="152.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+                  <Label layoutX="58.0" layoutY="626.0" text="Reg Type:" textFill="WHITE" />
+                  <JFXTextField fx:id="tftype" focusColor="#47a242" layoutX="151.0" layoutY="622.0" prefHeight="25.0" prefWidth="152.0" style="-fx-background-color: #fff;" unFocusColor="WHITE" />
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <TableView fx:id="studenView" onMouseClicked="#handleTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                  <TableColumn fx:id="tvid" prefWidth="94.39993131160736" text="ID" />
+                <TableColumn fx:id="tvfname" prefWidth="191.2000503540039" text="FirstName" />
+                <TableColumn fx:id="tvmname" prefWidth="189.5999755859375" text="MiddleName" />
+                  <TableColumn fx:id="tvlname" prefWidth="162.4000244140625" text="LastName " />
+                  <TableColumn fx:id="tvgender" prefWidth="107.99996948242188" text="Gender" />
+                  <TableColumn fx:id="tvdob" prefWidth="139.199951171875" text="DOB" />
+                  <TableColumn fx:id="tvphone" prefWidth="139.199951171875" text="PhoneNo" />
+                  <TableColumn fx:id="tvaddress" prefWidth="124.7999267578125" text="Address" />
+                  <TableColumn fx:id="tvayear" prefWidth="119.2000732421875" text="AcadamicYear" />
+                  <TableColumn fx:id="tvyear" prefWidth="71.199951171875" text="Year" />
+                  <TableColumn fx:id="tvtype" prefWidth="95.199951171875" text="RegType" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</fx:root>
